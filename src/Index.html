@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Index</title>
+		<!-- CSS FILES -->
+		<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+		<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+		<link rel="stylesheet" type="text/css"  href="css/style.css">
+		<link rel="shortcut icon" href="img/icon.png">
+	</head>	<body>
+
+		<!--HEADER-->
+		<header id="top-head" class="uk-position-fixed">
+			<div class="uk-container uk-container-expand uk-background-primary">
+				<nav class="uk-navbar uk-light" data-uk-navbar="mode:click; duration: 250">
+					<div class="uk-navbar-left">
+						<div class="uk-navbar-item uk-hidden@m">
+							<a class="uk-logo" href="#"><img class="custom-logo" src="img/dashboard-logo-white.svg" alt=""></a>
+						</div>
+
+					</div>
+					<div class="uk-navbar-right">
+						<ul class="uk-navbar-nav">
+							<li><a href="#" data-uk-icon="icon: sign-out" title="Cerrar Sesion" data-uk-tooltip></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--/HEADER-->
+		<!-- LEFT BAR -->
+		<aside id="left-col" class="uk-light uk-visible@m">
+			<div class="left-logo uk-flex uk-flex-middle" onclick="location.href='Index.html'">
+				<img class="custom-logo" src="img/logo.png" alt="">
+			</div>
+			<div class="left-content-box  content-box-dark">
+				<img src="img/usuario.png" alt="" class="uk-border-circle profile-img">
+				<h4 class="uk-text-center uk-margin-remove-vertical text-light">Administrador</h4>
+				
+				<div class="uk-position-relative uk-text-center uk-display-block">
+				    <a href="#" class="uk-text-small uk-text-muted uk-display-block uk-text-center" data-uk-icon="icon: triangle-down; ratio: 0.7">Usuario</a>
+				    <!-- user dropdown -->
+				    <div class="uk-dropdown user-drop" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-bottom-small; duration: 150">
+				    	<ul class="uk-nav uk-dropdown-nav uk-text-left">
+								<li ><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
+								<li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
+								<li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#"><span data-uk-icon="icon: image"></span> Your Data</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
+					    </ul>
+				    </div>
+				    <!-- /user dropdown -->
+				</div>
+			</div>
+			
+			<div class="left-nav-wrap">
+				<ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+					<li class="uk-nav-header">ACTIONS</li>
+					<li><a id="usuario" href="#"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Usuarios</a></li>
+					<li><a id="categoria"><span class="uk-margin-small-right icon icon-layers"></span>Categorias</a></li>
+					<li><a id="articulos" href="#"><span class="uk-margin-small-right icon icon-color-palette"></span>Articulos</a></li>
+					<li><a id="tipo" href="#"><span class="uk-margin-small-right icon icon-show-sidebar"></span> Tipos de Movimientos</a></li>
+					<li><a id="movimiento" href="#"><span class="uk-margin-small-right icon icon-shuffle"></span>Movimientos</a></li>
+				</ul>
+			</div>
+		</aside>
+		<!-- /LEFT BAR -->
+		<!-- CONTENT -->
+		<div id="content" >
+			<div class="uk-container uk-container-expand">
+				<div class="uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl" data-uk-grid>
+					<div>
+						<span class="uk-text-small"><span data-uk-icon="icon:users" class="uk-margin-small-right uk-text-primary"></span>Usuarios Nuevos</span>
+						<h1 class="uk-heading-primary uk-margin-remove  uk-text-primary">30</h1>
+						<div class="uk-text-small">
+							<span class="uk-text-warning" data-uk-icon="icon: triangle-down">0%</span> de Cambios.
+						</div>
+					</div>
+					<div>
+						<span class="uk-text-small"><span class="uk-margin-small-right uk-text-primary icon icon-compose"></span>Modificaciones</span>
+						<h1 class="uk-heading-primary uk-margin-remove uk-text-primary">12</h1>
+						<div class="uk-text-small">
+							<span class="uk-text-success" data-uk-icon="icon: triangle-up">15%</span> más despues de una semana.
+						</div>
+					</div>
+					<div>
+
+						<span class="uk-text-small"><span data-uk-icon="icon:clock" class="uk-margin-small-right uk-text-primary"></span>Tiempo de Ejecución</span>
+						<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2019-08-15T02:08:08+00:00">
+							<div>
+								<div class="uk-countdown-number uk-countdown-days" style="font-size: 30px"></div>
+								<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="font-size:12px">Days</div>
+							</div>
+							<div class="uk-countdown-separator" style="font-size: 30px">:</div>
+							<div>
+								<div class="uk-countdown-number uk-countdown-hours" style="font-size: 30px"></div>
+								<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="font-size:12px">Hours</div>
+							</div>
+							<div class="uk-countdown-separator" style="font-size: 30px">:</div>
+							<div>
+								<div class="uk-countdown-number uk-countdown-minutes" style="font-size: 30px"></div>
+								<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="font-size:12px">Minutes</div>
+							</div>
+							<div class="uk-countdown-separator" style="font-size: 30px">:</div>
+							<div>
+								<div class="uk-countdown-number uk-countdown-seconds" style="font-size: 30px"></div>
+								<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s" style="font-size:12px">Seconds</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="uk-visible@xl">
+						<span class="uk-text-small"><span data-uk-icon="icon:users" class="uk-margin-small-right uk-text-primary"></span>Lorem ipsum</span>
+						<h1 class="uk-heading-primary uk-margin-remove uk-text-primary">5.284</h1>
+						<div class="uk-text-small">
+							<span class="uk-text-success" data-uk-icon="icon: triangle-up"> 7%</span> more than last week.
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="uk-grid uk-grid-medium" data-uk-grid>
+					<h1 class="uk-width-1-1@l">Reportes</h1>
+
+					<!-- panel -->
+					<div class="uk-width-1-1 uk-width-1-2@l uk-width-1-2@xl">
+						<div class="uk-card uk-card-default uk-card-small uk-card-hover">
+							<div class="uk-card-header">
+								<div class="uk-grid uk-grid-small">
+									<div class="uk-width-auto"><h4>Movimientos</h4></div>
+									<div class="uk-width-expand uk-text-right panel-icons">
+										<a href="#" class="uk-icon-link" title="Generar Reportes" data-uk-tooltip data-uk-icon="icon: cog"></a>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card-body">
+								<div class="chart-container">
+									<canvas id="chart1"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /panel -->
+					<!-- panel -->
+					<div class="uk-width-1-2@s uk-width-1-2@l uk-width-1-4@xl">
+						<div class="uk-card uk-card-default uk-card-small uk-card-hover">
+							<div class="uk-card-header">
+								<div class="uk-grid uk-grid-small">
+									<div class="uk-width-auto"><h4>Stock Minimo</h4></div>
+									<div class="uk-width-expand uk-text-right panel-icons">
+										<a href="#" class="uk-icon-link" title="Generar Reporte" data-uk-tooltip data-uk-icon="icon: cog"></a>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card-body">
+								<div class="chart-container">
+									<canvas id="chart2"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /panel -->
+				</div>
+				<footer class="uk-text-center">
+					<hr>
+					<p class="uk-text-small uk-text-center">Copyright 2019 - <a href="http://www.curwebhn.com">Gestión de Proyectos Informaticos</a> </span></a> </p>
+				</footer>
+			</div>
+		</div>
+		<!-- /CONTENT -->
+
+		
+		<!-- JS FILES -->
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>
+		<script src="js/Chart.min.js"></script>
+		<script src="js/chartScripts.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			UIkit.util.on('#js-modal-prompt', 'click', function (e) {
+				e.preventDefault();
+				e.target.blur();
+				UIkit.modal.prompt('Name:', 'Your name').then(function (name) {
+					console.log('Prompted:', name)
+				});
+			});
+		</script>
+	</body>
+</html>

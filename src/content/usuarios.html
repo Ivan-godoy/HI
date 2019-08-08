@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+</head>
+<body>
+
+<div class="uk-container uk-container-expand">
+    <div class="uk-grid uk-grid-medium" data-uk-grid>
+        <!-- panel -->
+        <div class="uk-width-1-1@xl">
+            <div class="uk-card uk-card-default uk-card-small">
+                <div class="uk-card-header">
+                    <div class="uk-grid uk-grid-small">
+                        <div class="uk-width-auto"><h4>Usuarios</h4></div>
+                        <div class="uk-width-expand uk-text-right panel-icons">
+                            <a type="button" uk-toggle="target: #modal-example" data-uk-icon="icon:plus" title="Agregar Nuevo Usuario" data-uk-tooltip></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <div class="chart-containe uk-width-1-1 uk-text-justify scroll extender">
+                        <table class="uk-table uk-table-striped">
+                            <thead class="uk-sticky">
+                            <tr>
+                                <th>Identidad</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Tipo de Usuario</th>
+                                <th>Gestiones</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>0101199804392</td>
+                                <td>Iván Edgardo</td>
+                                <td>Godoy Munguía</td>
+                                <td>ivangodoy24@gmail.com</td>
+                                <td>Coordinador</td>
+                                <td>
+                                    <button uk-toggle="target: #modal-example" class="uk-button uk-button-primary" title="Editar Usuario" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Usuario" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul class="uk-pagination" uk-margin>
+                        <li><a href="#" title="Anterior" data-uk-tooltip><span uk-pagination-previous></span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li class="uk-active"><span>5</span></li>
+                        <li><a href="#">6</a></li>
+                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#" title="Siguiente" data-uk-tooltip><span uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /panel -->
+    </div>
+    <footer class="uk-text-center">
+        <hr>
+        <p class="uk-text-small uk-text-center">Copyright 2019 - <a href="http://www.curwebhn.com">Created by Plascedu</a> </span></a> </p>
+    </footer>
+</div>
+    <!--Modal-->
+    <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">Nuevo Usuario</h2>
+            <form class="uk-grid-small" uk-grid>
+                <div class="uk-width-1-2@s">
+                    <label for="nom-usuario">Nombre de Usuario</label>
+                    <input id="nom-usuario" class="uk-input" type="text" placeholder="Nombre">
+                </div>
+                <div class="uk-width-1-2@s">
+                    <label for="apel-usuario">Apellido de Usuario</label>
+                    <input id="apel-usuario" class="uk-input" type="text" placeholder="Apellido">
+                </div>
+                <div class="uk-width-1-1@s">
+                    <label for="id-usuario">Número de Identidad</label>
+                    <input id="id-usuario" class="uk-input" type="text" placeholder="0101199804392">
+                </div>
+                <div class="uk-width-1-1@xl">
+                    <label for="tipo">Tipo de Usuario</label>
+                    <select id="tipo" class="uk-select">
+                        <option>Coordinador</option>
+                        <option>Catedratico</option>
+                        <option>Administrador</option>
+                    </select>
+                </div>
+                <div class="uk-width-1-1@s">
+                    <label for="correo-usuario">Correo Electronico</label>
+                    <input id="correo-usuario" class="uk-input" type="text" placeholder="ivangodoy24@hi.com">
+                </div>
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary" type="button">Guardar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+<script src="../js/uikit.min.js"></script>
+<script src="../js/uikit-icons.min.js"></script>
+<script src="../js/Chart.min.js"></script>
+<script src="../js/chartScripts.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

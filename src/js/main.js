@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $('#usuario').click(function(){
+        $("#content").load("content/usuarios.html");
+    });
+    $('#categoria').click(function(){
+        $("#content").load("content/categorias.html");
+    });
+    $('#articulos').click(function(){
+        $("#content").load("content/articulos.html");
+    });
+    $('#tipo').click(function(){
+        $("#content").load("content/tipo_movimiento.html");
+    });
+    $('#movimiento').click(function(){
+        $("#content").load("content/movimiento.html");
+    });
+});

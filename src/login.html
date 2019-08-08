@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hardware Inventory - Inicio de Sesión</title>
+		<link rel="icon" href="img/icon.png">
+		<!-- CSS FILES -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css">
+	</head>
+	<body class="uk-flex uk-flex-center uk-flex-middle uk-background-muted uk-height-viewport" data-uk-height-viewport>
+		<div class="uk-position-bottom-center uk-position-small uk-visible@m uk-position-z-index">
+			<span class="uk-text-small uk-text-muted">© 2019 Hardware Inventory - <a href="https://github.com/zzseba78/Kick-Off">Creado por GPI</a></span>
+		</div>
+		<div class="uk-width-medium uk-padding-small">
+			<!-- login -->
+			<form class="toggle-class" action="login-dark.html">
+				<fieldset class="uk-fieldset">
+					<div class="uk-margin-small">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+							<input class="uk-input uk-border-pill" required placeholder="Usuario" type="text">
+						</div>
+					</div>
+					<div class="uk-margin-small">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+							<input class="uk-input uk-border-pill" required placeholder="Contraseña" type="password">
+						</div>
+					</div>
+					<div class="uk-margin-small">
+						<label><input class="uk-checkbox" type="checkbox"> Recordar mis Credenciales</label>
+					</div>
+					<div class="uk-margin-bottom">
+						<a href="Index.html" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Iniciar Sesión</a>
+					</div>
+				</fieldset>
+			</form>
+			<!-- /login -->
+
+			<!-- recover password -->
+			<form class="toggle-class" action="login-dark.html" hidden>
+				<div class="uk-margin-small">
+					<div class="uk-inline uk-width-1-1">
+						<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+						<input class="uk-input uk-border-pill" placeholder="E-mail" required type="text">
+					</div>
+				</div>
+				<div class="uk-margin-bottom">
+					<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Enviar Contraseña</button>
+				</div>
+			</form>
+			<!-- /recover password -->
+			
+			<!-- action buttons -->
+			<div>
+				<div class="uk-text-center">
+					<a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">Olvidaste tu Contraseña?</a>
+					<a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Volver al Inicio de Sesión</a>
+				</div>
+			</div>
+			<!-- action buttons -->
+		</div>
+		
+		<!-- JS FILES -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+	</body>
+</html>

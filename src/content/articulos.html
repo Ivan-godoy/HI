@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articulos</title>
+    <link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+</head>
+<body>
+
+<div class="uk-container uk-container-expand">
+    <div class="uk-grid uk-grid-medium" data-uk-grid>
+        <div class="uk-width-1-3@l">
+            <div class="uk-card uk-card-default uk-card-small uk-card-hover">
+                <div class="uk-card-header">
+                    <div class="uk-grid uk-grid-small">
+                        <div class="uk-width-auto"><h4>Crear Articulo</h4></div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <div class="chart-container" style="height: auto">
+                        <form class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-1@xl">
+                                <label for="nom-articulo">Nombre del Articulo</label>
+                                <input id="nom-articulo" class="uk-input" type="text" placeholder="Articulo">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <label for="cant-articulos">Cantidad de Articulos</label>
+                                <input id="cant-articulos" class="uk-input" type="number" placeholder="00">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <label for="cant-min">Minimo en Almacen</label>
+                                <input id="cant-min" class="uk-input" type="number" placeholder="00">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <label for="desc-articulo">Descripción</label>
+                                <textarea id="desc-articulo" class="uk-textarea" rows="5" placeholder="Descrpción..."></textarea>
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <label for="tipo">Categoria</label>
+                                <select id="tipo" class="uk-select">
+                                    <option>-----------</option>
+                                    <option>Electrónica</option>
+                                    <option>Computadoras</option>
+                                    <option>Redes</option>
+                                    <option>Repuestos</option>
+                                </select>
+                            </div>
+                            <div class="uk-width-1-1@l" style="margin-top: 25px">
+                                <p class="uk-text-right">
+                                    <button class="uk-button uk-button-default uk-modal-close" type="button">Borrar</button>
+                                    <button class="uk-button uk-button-primary" type="button">Guardar</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-width-expand">
+            <div class="uk-card uk-card-default uk-card-small uk-card-hover">
+                <div class="uk-card-header">
+                    <div class="uk-grid uk-grid-small">
+                        <div class="uk-width-auto"><h4>Articulos</h4></div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <div class="chart-container" style="height: 70vh; overflow-y: scroll">
+                        <table class="uk-table uk-table-striped" >
+                            <thead class="uk-sticky">
+                            <tr>
+                                <th>Descripción</th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Categoria</th>
+                                <th>Gestiones</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>Material 1</td>
+                                <td>5</td>
+                                <td>Redes</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 2</td>
+                                <td>10</td>
+                                <td>Repuestos</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 3</td>
+                                <td>15</td>
+                                <td>Computadora</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 9</td>
+                                <td>5</td>
+                                <td>electrónica</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 9</td>
+                                <td>5</td>
+                                <td>electrónica</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 9</td>
+                                <td>5</td>
+                                <td>electrónica</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 9</td>
+                                <td>5</td>
+                                <td>electrónica</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 9</td>
+                                <td>5</td>
+                                <td>electrónica</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 9</td>
+                                <td>5</td>
+                                <td>electrónica</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>En perfecto estado</td>
+                                <td>material 9</td>
+                                <td>5</td>
+                                <td>electrónica</td>
+                                <td>
+                                    <button class="uk-button uk-button-primary" title="Editar Articulo" data-uk-tooltip><span class="icon icon-edit-pencil"></span></button>
+                                    <button class="uk-button uk-button-danger" title="Inhabilitar Articulo" data-uk-tooltip><span class="icon icon-block"></span></button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="uk-text-center">
+        <hr>
+        <p class="uk-text-small uk-text-center">Copyright 2019 - <a href="http://www.curwebhn.com">Created by Plascedu</a> </span></a> </p>
+    </footer>
+</div>
+
+
+
+<script src="../js/uikit.min.js"></script>
+<script src="../js/uikit-icons.min.js"></script>
+<script src="../js/Chart.min.js"></script>
+<script src="../js/chartScripts.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
